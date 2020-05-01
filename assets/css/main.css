@@ -2698,6 +2698,7 @@ input, select, textarea {
 		background: #eee;
 		background-attachment: scroll;
 		background-position: top left;
+		background-repeat: repeat-y;
 		background-image: /*url("images/overlay.png"), */url("../../images/white.jpg"); /*Photo by Mads Schmidt Rasmussen on Unsplash*/
 		color: #222;
 		height: 100%;
