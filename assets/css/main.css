@@ -3284,11 +3284,15 @@ input, select, textarea {
   font-size: 1em;
 }
 #timeline section.year section ul.tutor {
-  color: #007662;
+  color: #117A65;
 }
 #timeline section.year section ul.research {
-  color: #8C1515;
+  color: #2E4053;
 }
+#timeline section.year section ul.admin {
+	color: #5B2C6F;
+}
+
 @media (min-width: 62em) {
   #timeline section.year section ul {
     padding: 1.2em 0 0 89px;
@@ -3335,7 +3339,7 @@ input, select, textarea {
 
 .sec {
 	color: #1f1815;
-	font-size: 32pt;
+	font-size: 28pt;
 	/*font-weight: bold;*/
 	font-family: Verdana, Geneva, sans-serif;
 }
