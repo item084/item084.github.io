@@ -12,6 +12,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/ani.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
 	</head>
 	<body class="is-preload">
@@ -57,8 +59,17 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>About me &#128075</h2>
-										<p>"Coding is my life..."</p>
+										<h2 style="margin-bottom: 0;">About me &#128075</h2>
+										<div class="signature_ani">
+											<div class="signature_ani_con">
+												<ul class="signature_ani_list">
+													<li class="signature_ani_item"><span style="color: red" >"Coding is my life . . ."</span></li>
+													<li class="signature_ani_item"><span style="color: darkgray" >"Ready to program . . ."</span></li>
+													<li class="signature_ani_item"><span style="color: yellowgreen" >"Always learning .  .."</span></li>
+													<li class="signature_ani_item"><span style="color: hotpink" >"Dedicated to what I love . . ."</span></li>
+												</ul>
+											</div>
+										</div>
 									</header>
 									<p>I am a junior undergraduate student at <a href="https://umich.edu/" target="_blank">University of michigan</a> 
 										in <a href="https://cse.engin.umich.edu/" target="_blank">Computer Science</a>. 
@@ -116,29 +127,29 @@
 									<h3>Recent Works &#128187</h3>
 									<p>Here's several projects I've done.</p>
 									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/cloneinsta.png" alt="" /></a>
+										<article data-aos="zoom-in" data-aos-duration="700">
+											<a href="https://insta.yuanyao.me" target="_blank" class="image"><img src="images/cloneinsta.png" alt="" /></a>
 											<div class="inner">
 												<h4>An Instagram cloned. 
 												<a href="https://insta.yuanyao.me" target="_blank" style="border-bottom: solid 1px #e4e4e4;">Try it!</a></h4>
 												<p>Flask, sqlite3, React. Delicate UI. </p>
 											</div>
 										</article>
-										<article>
+										<article data-aos="zoom-in" data-aos-duration="700">
 											<a href="#" class="image"><img src="images/interstellar.gif" alt="" /></a>
 											<div class="inner">
 												<h4>An interstellar parking lot.</h4>
 												<p>C++, OpenGL.</p>
 											</div>
 										</article>
-										<article>
+										<article data-aos="zoom-in" data-aos-duration="700">
 											<a href="#" class="image"><img src="images/crane.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>A crane robot.</h4>
 												<p>Arduino Nano. 1st place in speed in course competition.</p>
 											</div>
 										</article>
-										<article>
+										<article data-aos="zoom-in" data-aos-duration="700">
 											<a href="#" class="image"><img src="images/screen.png" alt="" /></a>
 											<div class="inner">
 												<h4>A screen protector attach machine.</h4>
@@ -229,12 +240,12 @@
 									<form method="post" action="https://formspree.io/mzbjbkgy">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
 											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message"/></li>
+													<li><input type="submit" value="Send Message"/></li>
 													<!--li><input type="reset" value="Reset Form"/></li-->
 												</ul>
 											</div>
@@ -243,7 +254,7 @@
 								</div>
 							</section>
 					</div>
-
+					
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
@@ -265,6 +276,17 @@
 			<script src="assets/js/main.js"></script>
 
 			<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+				AOS.init({
+					// detect reduce motion here to stop AOS
+					disable: function () {
+						const query = '(prefers-reduced-motion: reduce)';
+						const hasOSReducedMotion = window.matchMedia(query).matches;
+						if(hasOSReducedMotion) return true;
+					}
+				});
+			</script>
 
 	</body>
 </html>

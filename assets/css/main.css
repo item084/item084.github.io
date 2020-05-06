@@ -2514,7 +2514,7 @@ input, select, textarea {
 		background-color: #333333ff;
 		border-radius: 5px;
 		border: solid 3px #efefef00;
-		color: #ffffff !important;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 500;
@@ -2530,7 +2530,13 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
+			color: #339cff;
+			-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			border-color: #339cff;
+			color: #339cff;
 			/*color: #339cff !important;*/
 		}
 
@@ -2538,7 +2544,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: #339cff33;
+			background-color: #339cff00;
 			border-color: #339cff;
 			/*color: #339cff !important;*/
 		}
