@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alternative way to refer to an image</title>
+  </head>
+<body>
+
+  <h1>Original image</h1>
+  <img src="https://raw.githubusercontent.com/item084/oh-my-zsh-theme-yuan/master/images/yuan-zsh.png" id="img_succ"></img>
+
+
+  <h1>Fail loading</h1>
+  <img src="https://raw.githubusercontent.com/item084/oh-my-zsh-theme-yuan/master/images/yuan-zsh.png1" id="img_fail"></img>
+
+
+  <h1>Alternative source</h1>
+  <img src="https://raw.githubusercontent.com/item084/oh-my-zsh-theme-yuan/master/images/yuan-zsh.png1" id="img_alter"></img>
+
+  <script>
+    function checkImg() {
+      //objImg = new Image();
+      objImg = document.getElementById('img_alter');
+      objImg.onerror = function() {
+        objImg.src="https://raw.githubusercontent.com/item084/oh-my-zsh-theme-yuan/master/images/yuan-zsh.png"
+        console.log("load error!")
+      }
+    }
+    checkImg()
+  </script>
