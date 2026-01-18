@@ -1,3 +1,7 @@
 # Homepage of Yuan Yao
 
-My personal website. Available at [yuanyao.me](yuanyao.me) or [item084.github.io](item084.github.io).
+This is the source code for my personal website.
+
+🌐 Live site:
+- [yuanyao.me](https://yuanyao.me)
+- [item084.github.io](https://item084.github.io)
